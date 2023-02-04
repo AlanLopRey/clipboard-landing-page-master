@@ -1,6 +1,293 @@
-@use 'reset';
-
+@use "reset";
+@use "variables" as *;
 body {
-    font-size: 18px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  font-family: $principal_Font;
 }
 
+.top {
+  padding-top: 120px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 375px;
+  grid-template-rows: 1050px 780px 840px 1350px 650px 510px;
+  justify-content: center;
+}
+
+.btn-top {
+  background-color: $Strong-Cyan;
+}
+.btn-bottom {
+  background-color: $Light-Blue;
+}
+.card-link {
+  display: flex;
+  flex-direction: column;
+  &__a {
+  }
+}
+.card-link {
+  &__a {
+  }
+  &__h1 {
+  }
+  &__h2 {
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 140px;
+    width: 100%;
+    &--a {
+      color: #f1f1f1f1;
+      text-decoration: none;
+      align-self: center;
+      width: 80%;
+      height: 55px;
+      border-radius: 3rem;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+  &__p {
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__logo {
+    width: 135px;
+    margin-bottom: 70px;
+  }
+  &__description {
+    margin-bottom: 45px;
+    text-align: center;
+  }
+  &__h1 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+.section {
+  &__h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 155px;
+  }
+  &__p {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+.desktop-sct {
+  &__img {
+    margin-bottom: 50px;
+  }
+}
+
+.article {
+  margin-bottom: 50px;
+  text-align: center;
+  &__h3 {
+    margin-bottom: 15px;
+  }
+  &__p {
+  }
+}
+
+.article-mobile {
+  text-align: center;
+  &__h2 {
+    margin-bottom: 15px;
+  }
+  &__p {
+    margin-bottom: 145px;
+  }
+}
+.mobile {
+  margin-top: 140px;
+}
+
+.article-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 60px;
+  &__img {
+    margin-bottom: 35px;
+  }
+  &__h3 {
+    margin-bottom: 20px;
+  }
+  &__p {
+  }
+}
+
+.companys {
+  margin-top: 120px;
+  &__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__li {
+    margin-bottom: 60px;
+    list-style: none;
+    &--img {
+    }
+  }
+}
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &__a {
+  }
+  &__h2 {
+    margin-bottom: 25px;
+  }
+  &__p {
+    margin-bottom: 40px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  &__img {
+    width: 60px;
+    margin-bottom: 45px;
+  }
+  &__nav {
+    width: 160px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    &--a {
+    }
+  }
+  &__section {
+    display: flex;
+    flex-direction: column;
+    &--a {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main {
+    grid-template-columns: 95vw;
+    grid-template-rows: 900px 675px 1750px 510px 500px 150px;
+  }
+
+  .article {
+    &__h3 {
+    }
+    &__p {
+    }
+  }
+  .article-mobile {
+    &__h2 {
+    }
+    &__img {
+    }
+    &__p {
+    }
+  }
+  .article-summary {
+    &__h3 {
+    }
+    &__img {
+    }
+    &__p {
+    }
+  }
+  .attribution {
+  }
+  .btn-bottom {
+  }
+  .btn-top {
+  }
+  .card-link {
+    &__h1 {
+    }
+    &__h2 {
+    }
+    &__links {
+      &--a {
+      }
+    }
+    &__p {
+    }
+  }
+  .companys {
+    &__li {
+      &--img {
+      }
+    }
+    &__ul {
+    }
+  }
+  .desktop-sct {
+    &__img {
+    }
+  }
+  .div {
+  }
+  .footer {
+    &__img {
+    }
+    &__nav {
+      &--a {
+      }
+    }
+    &__section {
+      &--a {
+      }
+    }
+  }
+  .header {
+    &__description {
+    }
+    &__h1 {
+    }
+    &__logo {
+    }
+  }
+  .main {
+  }
+  .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .section {
+    display: flex;
+    column-gap: 100px;
+    &__h2 {
+    }
+    &__p {
+    }
+  }
+  .summary {
+  }
+  .top {
+    margin-top: 125px;
+  }
+}
