@@ -4,19 +4,23 @@ body {
   display: flex;
   justify-content: center;
   font-family: $principal_Font;
+  background-image: url(./images/bg-header-mobile.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
 
 .main {
   display: grid;
   grid-template-columns: 100vw;
   overflow: hidden;
-  // grid-template-rows: 80% 135% 90% 1270px 390px 500px;
   grid-template-rows: repeat(6, auto);
   justify-items: center;
   text-align: center;
   justify-content: center;
-  // padding: 0 20px;
+  color: $Dark-Grayish-Blue;
 }
+
 .header {
   margin-top: 130px;
   display: flex;
@@ -41,8 +45,8 @@ body {
 
 .buttons {
   text-decoration: none;
-
   &__a {
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,6 +65,7 @@ body {
   }
   &__p {
     margin-top: 20px;
+    color: $Grayish-Blue;
   }
 }
 
@@ -72,6 +77,7 @@ body {
     margin-top: 60px;
   }
   &__p {
+    color: $Grayish-Blue;
     margin-top: 20px;
   }
 }
@@ -81,6 +87,7 @@ body {
     margin-top: 50px;
   }
   &__p {
+    color: $Grayish-Blue;
     margin-top: 20px;
   }
 }
@@ -97,6 +104,7 @@ body {
     margin-top: 60px;
   }
   &__p {
+    color: $Grayish-Blue;
   }
 }
 
@@ -115,6 +123,7 @@ body {
     margin-top: 40px;
   }
   &__p {
+    color: $Grayish-Blue;
     margin-top: 20px;
   }
 }
@@ -126,8 +135,6 @@ body {
     justify-content: space-around;
     align-items: center;
     height: 65vh;
-    &--img {
-    }
   }
 }
 
@@ -137,12 +144,19 @@ body {
   align-items: center;
   margin-top: 165px;
   width: 100%;
-  background-color: $Grayish-Blue;
+  background-color: $Footer-color;
   &__a {
+    color: $Dark-Grayish-Blue;
     text-decoration: none;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+  }
+  &__a:hover {
+    color: $Strong-Cyan;
   }
   &__logo {
     width: 50px;
@@ -154,14 +168,21 @@ body {
   width: 165px;
   justify-content: space-around;
   margin-top: 50px;
-  &__a {
+  &__a:hover {
+    filter: brightness(0) saturate(100%) invert(44%) sepia(19%) saturate(3659%)
+      hue-rotate(209deg) brightness(100%) contrast(105%);
+    transition-property: filter;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url(./images/bg-header-desktop.png);
+  }
   .main {
     grid-template-columns: 100vw;
-    // grid-template-rows: 570px 940px 1030px 510px 400px 250px;
     grid-template-rows: repeat(6, auto);
   }
 
@@ -172,8 +193,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    &__logo {
-    }
   }
 
   .buttons {
@@ -188,8 +207,6 @@ body {
     }
     &__h1 {
       margin-top: 65px;
-    }
-    &__h2 {
     }
     &__p {
       margin-top: 20px;
@@ -207,8 +224,6 @@ body {
     margin-top: 150px;
     align-self: stretch;
     max-width: 700px;
-    &__h2 {
-    }
     &__img {
       position: relative;
       right: 10%;
