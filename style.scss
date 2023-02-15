@@ -26,8 +26,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__logo {
-  }
 }
 
 .btn-top {
@@ -106,9 +104,6 @@ body {
   &__p {
     color: $Grayish-Blue;
   }
-}
-
-.companys {
 }
 
 .article-summary {
@@ -239,10 +234,6 @@ body {
     position: relative;
     right: 15%;
     top: 10%;
-    &__h3 {
-    }
-    &__p {
-    }
   }
   .div-article-top {
     width: 90vw;
@@ -255,11 +246,6 @@ body {
   .article {
     display: flex;
     flex-direction: column;
-
-    &__h3 {
-    }
-    &__p {
-    }
   }
 
   .section-mobile {
@@ -268,8 +254,6 @@ body {
 
   .article-mobile {
     margin-top: 3.125rem;
-    &__h2 {
-    }
     &__p {
       margin-top: 1.5625rem;
     }
@@ -286,12 +270,6 @@ body {
 
   .article-summary {
     width: 20.625rem;
-    &__h3 {
-    }
-    &__img {
-    }
-    &__p {
-    }
   }
   .logos {
     height: 50%;
@@ -301,8 +279,6 @@ body {
       flex-direction: row;
       height: 25%;
       width: 90vw;
-      &--img {
-      }
     }
   }
 
@@ -326,7 +302,5 @@ body {
   }
   .nav-social {
     margin-top: 0;
-    &__a {
-    }
   }
 }
